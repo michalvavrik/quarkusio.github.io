@@ -100,6 +100,7 @@ asciidoctor:
     icons: font
     outfilesuffix: ''
     add-copy-button-to-env-var: true
+    add-config-property-copy-button: true
 
 # Pages permalink
 defaults:
