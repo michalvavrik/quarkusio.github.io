@@ -52,6 +52,18 @@ Extensions.register do
   end
 end
 
+config_property_id=0
+Extensions.register do
+  inline_macro do
+    named :config_property_copy_button
+    resolve_attributes false
+    process do |parent, target, attrs|
+      copy_btn = %(<button class="btn-copy fa fa-clipboard inline-btn-copy" data-clipboard-action="copy" data-clipboard-target="#config-property-#{config_property_id}" title="Copy to clipboard" do-not-collapse="true"></button>)
+      config_property_id += 1
+      create_inline_pass parent, %(#{copy_btn})
+    end
+  end
+end
 
 ### ALL CONFIG page processors
 
