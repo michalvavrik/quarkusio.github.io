@@ -102,9 +102,11 @@
           <li><a href="/about" class="">WHAT IS QUARKUS?</a></li>
           <li><a href="/container-first" class="">CONTAINER FIRST</a></li>
           <li><a href="/continuum" class="">VERSATILITY</a></li>
-          <li><a href="/developer-joy" class="">DEVELOPER JOY</a></li>
-          <li><a href="/kubernetes-native" class="">KUBERNETES NATIVE</a></li>
           <li><a href="/standards" class="">STANDARDS</a></li>
+          <li><a href="/kubernetes-native" class="">KUBERNETES NATIVE</a></li>
+          <li><a href="/performance" class="">PERFORMANCE</a></li>
+          <li><a href="/developer-joy" class="">DEVELOPER JOY</a></li>
+          
         </ul>
       </li>
       <li class="dropdown">
@@ -187,7 +189,7 @@
         
         
         
-        <option value="latest" >3.16.2 - Latest</option>
+        <option value="latest" >3.16.3 - Latest</option>
         
         
         
@@ -284,7 +286,7 @@ which contains the deployment JARs and their dependencies (and some class-loader
 </td>
 <td class="content">
 By default, you&#8217;ll get a warning if a build time property has been changed at runtime.
-You may set the <code>quarkus.configuration.build-time-mismatch-at-runtime=fail</code> property to make sure your application does not start up if there is a mismatch.
+You may set the <code>quarkus.config.build-time-mismatch-at-runtime=fail</code> property to make sure your application does not start up if there is a mismatch.
 However, as of this writing changing <code>quarkus.datasource.db-kind</code> at runtime did neither fail nor produce a warning but was silently ignored.
 </td>
 </tr>

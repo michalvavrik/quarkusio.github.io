@@ -102,9 +102,11 @@
           <li><a href="/about" class="">WHAT IS QUARKUS?</a></li>
           <li><a href="/container-first" class="">CONTAINER FIRST</a></li>
           <li><a href="/continuum" class="">VERSATILITY</a></li>
-          <li><a href="/developer-joy" class="">DEVELOPER JOY</a></li>
-          <li><a href="/kubernetes-native" class="">KUBERNETES NATIVE</a></li>
           <li><a href="/standards" class="">STANDARDS</a></li>
+          <li><a href="/kubernetes-native" class="">KUBERNETES NATIVE</a></li>
+          <li><a href="/performance" class="">PERFORMANCE</a></li>
+          <li><a href="/developer-joy" class="">DEVELOPER JOY</a></li>
+          
         </ul>
       </li>
       <li class="dropdown">
@@ -187,7 +189,7 @@
         
         
         
-        <option value="latest" >3.16.2 - Latest</option>
+        <option value="latest" >3.16.3 - Latest</option>
         
         
         
@@ -233,7 +235,7 @@ This document describes the purpose of each Quarkus extension metadata file and 
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Two of the metadata files have the same name but different extensions, <code>quarkus-extension.yaml</code> and <code>quarkus-extension.properties</code>. It is easy to mix them up, be careful. You will usually edit the YAML file and track it in your SCM. While you <em>can</em> manually manage the properties file, Quarkus will generated it at build if you don&#8217;t.
+Two of the metadata files have the same name but different extensions, <code>quarkus-extension.yaml</code> and <code>quarkus-extension.properties</code>. It is easy to mix them up, be careful. You will usually edit the YAML file and track it in your SCM. While you <em>can</em> manually manage the properties file, Quarkus will generate it at build if you don&#8217;t.
 </td>
 </tr>
 </table>
@@ -526,6 +528,9 @@ The following properties may appear in this file:</p>
       
         
         <li class="guide"><a href="/version/main/guides/extension-codestart">Extension codestart</a></li>
+      
+        
+        <li class="concepts"><a href="/version/main/guides/extension-maturity-matrix">A maturity matrix for Quarkus extensions</a></li>
       
         
         <li class="guide"><a href="/version/main/guides/building-my-first-extension">Building my first extension</a></li>
